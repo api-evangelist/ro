@@ -1,8 +1,16 @@
 aid: ro
 name: Ro
-description: Ro is a company surfaced as a portfolio company of canaan-partners, general-catalyst, initialized-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Ro (ro.co) is a direct-to-consumer telehealth company that connects patients with
+  US-licensed healthcare providers entirely online, offering prescription treatment,
+  provider visits, and pharmacy fulfillment across categories including men's and
+  women's health, weight management (Ro Body), dermatology (Ro Derm), hair loss,
+  fertility (Ro Fertility), and sexual health. Ro deliberately operates a "Zero-API"
+  vertically integrated online-visit experience and does not publish a public
+  developer API, SDKs, or a developer portal; its only public machine-readable
+  surface is a security posture (RFC 9116 security.txt and a HackerOne vulnerability
+  disclosure program). Ro is backed by Canaan Partners, General Catalyst, and
+  Initialized Capital.
 url: https://raw.githubusercontent.com/api-evangelist/ro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +20,30 @@ x-backed-by:
 - initialized-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://ro.co/rocostatic/images/og-image.jpg
 tags:
 - Company
+- Telehealth
+- Healthcare
+- Digital Health
+- Pharmacy
+- Direct to Consumer
+- Weight Management
+- Fertility
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +53,24 @@ maintainers:
 common:
 - type: Website
   url: https://ro.co
+- type: TermsOfService
+  url: https://ro.co/terms-of-use/
+- type: PrivacyPolicy
+  url: https://ro.co/privacy-policy/
+- type: Support
+  url: https://ro.co/contact-us/
+- type: SecurityTxt
+  url: well-known/ro-security.txt
+- type: WellKnown
+  url: well-known/ro-well-known.yml
+- type: DomainSecurity
+  url: security/ro-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/ro-vulnerability-disclosure.yml
+- type: Security
+  url: https://hackerone.com/ro
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1

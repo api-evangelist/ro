@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://ro.co/.well-known/*
+host: https://ro.co
+documents:
+- path: /.well-known/security.txt          # RFC 9116
+  status: 200
+  file: ro-security.txt
+- path: /.well-known/openid-configuration   # OIDC discovery — returns SPA HTML, not a discovery doc
+  status: 301
+- path: /.well-known/oauth-authorization-server  # RFC 8414 — SPA HTML fallback
+  status: 301
+- path: /.well-known/api-catalog             # RFC 9727 — SPA HTML fallback
+  status: 301
+- path: /.well-known/ai-plugin.json          # SPA HTML fallback
+  status: 301

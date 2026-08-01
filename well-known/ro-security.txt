@@ -1,0 +1,8 @@
+# Ro Product Security Team
+Contact: mailto:vdp@ro.co
+Contact: https://hackerone.com/ro/reports/new
+Preferred-Languages: en
+Policy: https://hackerone.com/ro
+
+# Search for Cyber :)
+Hiring: https://ro.co/careers
